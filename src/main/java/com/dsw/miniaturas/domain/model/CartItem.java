@@ -22,7 +22,7 @@ public class CartItem {
 	@JsonBackReference
 	@ManyToOne
 	private Cart cart;
-	
+
 	@OneToOne
 	private Miniature miniature;
 

@@ -13,22 +13,23 @@ CREATE TABLE miniature (
 	weight VARCHAR(10),
 	image VARCHAR(255),
 	price DECIMAL(10, 2) NOT NULL,
-	
+
 	PRIMARY KEY (id)
 );
 
 CREATE TABLE user (
 	id BIGINT AUTO_INCREMENT,
 	cpf CHAR(11) NOT NULL,
-	password VARCHAR(65) NOT NULL,
+	password VARCHAR(129) NOT NULL,
 	name VARCHAR(50) NOT NULL,
 	email VARCHAR(60) NOT NULL,
 	state CHAR(2) NOT NULL,
 	cep CHAR(8) NOT NULL,
 	address VARCHAR(50) NOT NULL,
+	city VARCHAR(50) NOT NULL,
 	number VARCHAR(20) NOT NULL,
 	date_created TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-	
+
 	PRIMARY KEY (id)
 );
 
@@ -130,5 +131,5 @@ update miniature set image='/Imagens/stradale.jpg' where id=8;
 update miniature set image='/Imagens/mustang.jpg' where id=9;
 update miniature set image='/Imagens/f50.jpg' where id=10;
 
-insert into user (cpf, password, name, email, state, cep, address, number)
-values ('36416918854', 'bianchi', 'Bruno Henrique Bianchi', 'brunohbianchi@hotmail.com', '1', '13076160', 'Rua Otavio Machado', '225 Ap152');
+insert into user (cpf, password, name, email, state, cep, address, number, city)
+values ('36416918854', 'bianchi', 'Bruno Henrique Bianchi', 'brunohbianchi@hotmail.com', '1', '13076160', 'Rua Otavio Machado', '225 Ap152', 'Hortocity');

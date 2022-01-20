@@ -24,7 +24,7 @@ public class CartService {
 
 	@Autowired
 	private MiniatureRepository miniatureRepository;
-	
+
 	@Autowired
 	private CartItemRepository cartItemRepository;
 

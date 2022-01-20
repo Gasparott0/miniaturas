@@ -25,6 +25,7 @@ public class User {
 	private String state;
 	private String cep;
 	private String address;
+	private String city;
 	private String number;
 	private LocalDateTime dateCreated;
 }

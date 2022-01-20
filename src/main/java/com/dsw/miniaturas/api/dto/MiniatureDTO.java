@@ -11,8 +11,9 @@ import lombok.Setter;
 @AllArgsConstructor
 public class MiniatureDTO {
 
+	private long id;
 	private String brand;
 	private String model;
 	private BigDecimal price;
-
+	private String image;
 }

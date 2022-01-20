@@ -22,7 +22,7 @@ public class MiniatureService {
 		List<Miniature> miniatures = miniatureRepository.findAll();
 
 		return miniatures.stream().map(miniature -> {
-			return new MiniatureDTO(miniature.getBrand(), miniature.getModel(), miniature.getPrice());
+			return new MiniatureDTO(miniature.getId(), miniature.getBrand(), miniature.getModel(), miniature.getPrice(), miniature.getImage());
 		}).collect(Collectors.toList());
 
 	}

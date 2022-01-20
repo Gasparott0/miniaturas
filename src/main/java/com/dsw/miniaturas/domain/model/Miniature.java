@@ -30,4 +30,5 @@ public class Miniature {
 	private Integer seats;
 	private String weight;
 	private BigDecimal price;
+	private String image;
 }

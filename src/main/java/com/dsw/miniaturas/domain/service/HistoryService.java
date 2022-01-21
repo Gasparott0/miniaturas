@@ -1,5 +1,7 @@
 package com.dsw.miniaturas.domain.service;
 
+import java.time.LocalDateTime;
+import java.util.Date;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -39,6 +41,7 @@ public class HistoryService {
 		History history = new History();
 		history.setUser(user);
 		history.setMiniature(miniature);
+		history.setAccessDate(LocalDateTime.now());
 		return historyRepository.save(history);
 	}
 
